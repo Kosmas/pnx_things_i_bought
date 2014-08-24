@@ -13,7 +13,7 @@ defmodule PnxThingsIBought.Mixfile do
   def application do
     [
       mod: { PnxThingsIBought, [] },
-      applications: [:phoenix, :cowboy]
+      applications: [:phoenix, :cowboy, :postgrex, :ecto]
     ]
   end
 
@@ -25,7 +25,9 @@ defmodule PnxThingsIBought.Mixfile do
   defp deps do
     [
       {:phoenix, github: "phoenixframework/phoenix"},
-      {:cowboy, "~> 1.0.0"}
+      {:cowboy, "~> 1.0.0"},
+      {:postgrex, "~> 0.5.4"},
+      {:ecto, "~> 0.2.0"}
     ]
   end
 end

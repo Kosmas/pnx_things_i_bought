@@ -1,8 +1,12 @@
 %{"cowboy": {:package, "1.0.0"},
   "cowlib": {:package, "1.0.0"},
+  "decimal": {:package, "0.2.4"},
+  "ecto": {:package, "0.2.3"},
   "inflex": {:package, "0.2.4"},
   "linguist": {:package, "0.1.1"},
   "phoenix": {:git, "git://github.com/phoenixframework/phoenix.git", "1763d583ac44b0f8e8d6eede00e97ce61228246e", []},
   "plug": {:package, "0.6.0"},
   "poison": {:package, "1.0.1"},
+  "poolboy": {:package, "1.2.1"},
+  "postgrex": {:package, "0.5.5"},
   "ranch": {:package, "1.0.0"}}
