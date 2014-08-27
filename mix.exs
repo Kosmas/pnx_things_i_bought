@@ -27,7 +27,7 @@ defmodule PnxThingsIBought.Mixfile do
       {:phoenix, github: "phoenixframework/phoenix"},
       {:cowboy, "~> 1.0.0"},
       {:postgrex, "~> 0.5.4"},
-      {:ecto, "~> 0.2.0"}
+      {:ecto, "~> 0.2.3"}
     ]
   end
 end
