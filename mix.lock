@@ -2,7 +2,6 @@
   "cowlib": {:package, "1.0.0"},
   "decimal": {:package, "0.2.4"},
   "ecto": {:package, "0.2.3"},
-  "inflex": {:package, "0.2.4"},
   "linguist": {:package, "0.1.1"},
   "phoenix": {:git, "git://github.com/phoenixframework/phoenix.git", "30d625254d58e7fef54f033ad187abd598f31ecb", []},
   "plug": {:package, "0.6.0"},

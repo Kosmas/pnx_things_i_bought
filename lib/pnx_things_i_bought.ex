@@ -5,13 +5,8 @@ defmodule PnxThingsIBought do
   # for more information on OTP Applications
   def start(_type, _args) do
     import Supervisor.Spec, warn: false
-
-    children = [
-      # Define workers and child supervisors to be supervised
-      # worker(TestApp.Worker, [arg1, arg2, arg3])]
-    ]
-
-    opts = [strategy: :one_for_one, name: PnxThingsIBought.Supervisor]
-    Supervisor.start_link(children, opts)
+    tree = [worker(PnxThingsIBought.Repo, [])]
+    opts = [strategy: :one_for_one, name: PnxThingsIBought.Sup]
+    Supervisor.start_link(tree, opts)
   end
 end
