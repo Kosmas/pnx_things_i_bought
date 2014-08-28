@@ -4,3 +4,5 @@
     <li><%= purchase.name %> - <%= purchase.cost %></li>
   <% end %>
 </ul>
+
+<a href="/new">New Purchase</a>
