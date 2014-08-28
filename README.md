@@ -21,3 +21,8 @@ Now you can visit `localhost:4000` from your browser.
 ### Ruby on Rails - Phoenix 
 
 * Since there is no scaffold generator for Phoenix the controller, views and migrations will be created manually.
+* is there a form_for equivalent in Phoenix or we are only using the form tag?
+* is there a partial to use form in edit/new as in Rails?
+* is there a way to display errors in new form as in model.errors.any? in Rails?
+* Phoenix alrady comes with bootstrap(?) so styling css is already available.
+* is there a flash message equivalent in Phoenix?
