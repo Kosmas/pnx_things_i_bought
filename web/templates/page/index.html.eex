@@ -1,7 +1,7 @@
 <h1>Listing Purchases</h1>
 <ul>
   <%= for purchase <- @purchases do %>
-    <li><%= purchase.name %> - <%= purchase.cost %></li>
+    <li><%= purchase.name %></li>
   <% end %>
 </ul>
 
