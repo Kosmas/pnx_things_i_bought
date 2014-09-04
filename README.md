@@ -26,3 +26,13 @@ Now you can visit `localhost:4000` from your browser.
 * is there a way to display errors in new form as in model.errors.any? in Rails?
 * Phoenix alrady comes with bootstrap(?) so styling css is already available.
 * is there a flash message equivalent in Phoenix?
+* bug in Phoenix when you want to display numerical postgress field 
+  (create a new file in lib/numeric_fix.ex - thanks Jose Valim and add the following:
+```
+defimpl Phoenix.Html.Safe, for: Decimal do
+  def to_string(dec) do
+    Decimal.to_string(dec)
+  end
+end
+```
+* validations exist in ecto but they have to be run manually
