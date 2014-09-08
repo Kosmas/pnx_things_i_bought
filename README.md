@@ -37,3 +37,4 @@ end
 ```
 * validations exist in ecto but they have to be run manually
 * Phoenix currently only comes with Postgres database connectivity
+* is it posible to redirect to the show page from the save method? Can we get saved record's id?
