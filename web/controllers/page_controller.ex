@@ -18,4 +18,9 @@ defmodule PnxThingsIBought.PageController do
     PnxThingsIBought.Repo.insert(purchase)
     redirect conn, Router.index_path(:index)
   end
+
+  def show(conn, params) do
+    purchase = PnxThingsIBought.Queries.purchase_detail_query(params["id"])
+    render conn, "show", [purchase: purchase, action: params["action"]]
+  end
 end

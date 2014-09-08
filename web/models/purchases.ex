@@ -5,4 +5,8 @@ defmodule PnxThingsIBought.Purchases do
     field :name, :string
     field :cost, :float
   end
+
+  validate purchase,
+    name: present(),
+    cost: greater_than(0)
 end

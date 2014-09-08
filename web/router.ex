@@ -5,4 +5,5 @@ defmodule PnxThingsIBought.Router do
   get "/", PnxThingsIBought.PageController, :index, as: :index
   get "/new", PnxThingsIBought.PageController, :new
   post "/new", PnxThingsIBought.PageController, :save, as: :save
+  get "/purchase/:id", PnxThingsIBought.PageController, :show, as: :show
 end
