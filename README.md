@@ -38,3 +38,5 @@ end
 * validations exist in ecto but they have to be run manually
 * Phoenix currently only comes with Postgres database connectivity
 * is it posible to redirect to the show page from the save method? Can we get saved record's id?
+* Server needs to be manually stopped and started in developmnent mode after code changes
+* is there a link_to equivalent? Currently using "a" tag for links
