@@ -23,4 +23,9 @@ defmodule PnxThingsIBought.PageController do
     purchase = PnxThingsIBought.Queries.purchase_detail_query(params["id"])
     render conn, "show", [purchase: purchase, action: params["action"]]
   end
+
+  def edit(conn, %{"id" => id}) do
+    purchase = PnxThingsIBought.Queries.purchase_detail_query(id)
+    render conn, "edit", purchase: purchase
+  end
 end

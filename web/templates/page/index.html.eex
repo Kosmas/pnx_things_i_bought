@@ -14,7 +14,8 @@
       <tr>
         <td><%= purchase.name %></td>
         <td><%= purchase.cost %></td>
-        <td><a href="/purchase/<%= purchase.id %>"">Show</a></td>
+        <td><a href="/purchase/<%= purchase.id %>">Show</a></td>
+        <td><a href="/purchase/<%= purchase.id %>/edit">Edit</a></td>
       </tr>
     <% end %>
   </tbody>

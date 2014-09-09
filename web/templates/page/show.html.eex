@@ -7,3 +7,6 @@
   <strong>Cost:</strong>
   <%= @purchase.cost %>
 </p>
+
+<a href="/purchase/<%= @purchase.id %>/edit">Edit</a> |
+<a href="/">Back</a>
