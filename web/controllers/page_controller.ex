@@ -28,4 +28,13 @@ defmodule PnxThingsIBought.PageController do
     purchase = PnxThingsIBought.Queries.purchase_detail_query(id)
     render conn, "edit", purchase: purchase
   end
+
+  def update(conn, params) do
+    # is there a better way to convert the param["cost"] to float?
+    {cost, _} = Float.parse(params["purchase_cost"])
+    purchase = PnxThingsIBought.Repo.get(PnxThingsIBought.Purchases, params["id"])
+    purchase = %{purchase | name: params["purchase_name"], cost: cost}
+    PnxThingsIBought.Repo.update(purchase)
+    redirect conn, Router.index_path(:index)
+  end
 end
