@@ -8,4 +8,6 @@ defmodule PnxThingsIBought.Router do
   get "/purchase/:id", PnxThingsIBought.PageController, :show, as: :show
   get "/purchase/:id/edit", PnxThingsIBought.PageController, :edit, as: :edit
   post "/purchase/:id", PnxThingsIBought.PageController, :update, as: :update
+  get "/purchase/:id/:action", PnxThingsIBought.PageController, :show, as: :delete
+  post "/", PnxThingsIBought.PageController, :destroy, as: :destroy
 end

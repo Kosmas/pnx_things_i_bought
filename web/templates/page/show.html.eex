@@ -1,6 +1,10 @@
 <p>
-  <strong>Name:</strong>
-  <%= @purchase.name %>
+  <%= if @action == "delete" do %>
+    <h2>Are you sure that you want to delete <%= @purchase.name %>?</h2>
+  <% else %>
+    <strong>Name:</strong>
+    <%= @purchase.name %>
+  <% end %>
 </p>
 
 <p>
@@ -10,3 +14,7 @@
 
 <a href="/purchase/<%= @purchase.id %>/edit">Edit</a> |
 <a href="/">Back</a>
+<%= if @action == "delete" do %>
+  <input type="hidden" name="id" value="<%= @purchase.id %>">
+  <button type="submit">Delete</button>
+<%= end %>

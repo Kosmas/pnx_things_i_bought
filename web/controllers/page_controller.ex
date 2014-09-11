@@ -37,4 +37,10 @@ defmodule PnxThingsIBought.PageController do
     PnxThingsIBought.Repo.update(purchase)
     redirect conn, Router.index_path(:index)
   end
+
+  def destroy(conn, params) do
+    purchase = PnxThingsIBought.Queries.purchase_detail_query(params["id"])
+    PnxThingsIBought.Repo.delete(purchase)
+    redirect conn, Router.index_path(:index)
+  end
 end
